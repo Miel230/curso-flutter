@@ -4,7 +4,7 @@ Git Hub
  - Git Unit,cria um novo repositório 
  - Git Status,verifica os arquivos
  - Git Add .,adiciona todos os arquivos
- - Git Commit (arquivo),comitar
+ - Git Commit (fale da att),comitar
  - Git Push Main/Origin,atualiza da branch para a master
  - Git Pull,atualiza a master para a branch
  - Git Checkout -b (nome),cria uma nova Branch
