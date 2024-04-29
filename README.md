@@ -5,8 +5,8 @@ Git Hub
  - Git Status,verifica os arquivos
  - Git Add .,adiciona todos os arquivos
  - Git Commit (fale da att),comitar
- - Git Push Main/Origin,atualiza da Master para a Branch
- - Git Pull,atualiza a branch para a Master
+ - Git Push Main/Origin,atualiza da Branch para a Master
+ - Git Pull,atualiza a Master para a Branch
  - Git Checkout -b (nome),cria uma nova Branch
  - Git Checkout (nome),Troca de Branch
  - Git Checkout -- .,Apagar tudo que eu fiz.
