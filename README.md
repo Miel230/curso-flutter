@@ -11,6 +11,7 @@ Git Hub
  - Git Checkout (nome),Troca de Branch e entra na Branch
  - Git Checkout -- .,Apagar tudo que eu fiz.
  - Git Restore --Staged (Arquivo),Retira o que já está adicionado.
+ - Git Merge (nome da Branch),joga tudo da branch selecionada para aquela que você está no momento
 
 aprendizado de curso flutter
 
