@@ -1,4 +1,17 @@
 # curso-flutter
+
+Git Hub
+ - Git Unit,cria um novo repositório 
+ - Git Status,verifica os arquivos
+ - Git Add .,adiciona todos os arquivos
+ - Git Commit -m (fale da att),comitar
+ - Git Push Origin (Nome da Branch),Sobe a Branch para o servidor
+ - Git Pull,Desce do servidor para Branch
+ - Git Checkout -b (nome),cria uma nova Branch
+ - Git Checkout (nome),Troca de Branch e entra na Branch
+ - Git Checkout -- .,Apagar tudo que eu fiz.
+ - Git Restore --Staged (Arquivo),Retira o que já está adicionado.
+
 aprendizado de curso flutter
 
 utilizando o flutter
