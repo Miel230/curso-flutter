@@ -6,7 +6,7 @@ Git Hub
  - Git Add .,adiciona todos os arquivos
  - Git Commit -m (fale da att),comitar
  - Git Push Origin (Nome da Branch),Sobe a Branch para o servidor
- - Git Pull,Desce do servidor para Branch
+ - Git Pull Origin (nome da branch),Desce do servidor para Branch
  - Git Checkout -b (nome),cria uma nova Branch e entra na Branch
  - Git Checkout (nome),Troca de Branch 
  - Git Checkout -- .,Apagar tudo que eu fiz.
