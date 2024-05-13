@@ -17,17 +17,23 @@ aprendizado de curso flutter
 
 utilizando o flutter
 
-Aula 01
- - Construir layout's,Técnicas de leitura de mockups,Widgets Primitivos,Exemplos "Práticos" e Confiança em construir telas.
+Aula 01-O que faremos no curso
+ - Um curso para ensinar o flutter desde o zero,desde a instalação do SDK e após como instalar widgets.
 
-Aula 02
- - Não falar sobre "Regra do Negócio",aplicações usando Firebase,Não será utilizado temas de estrutura de projeto e Não falaremos conceitos aprofundados da linguagem Dart
+Aula 02-Falando sobre o autor
+ - Ele fez 9 livros(sobre windows,adnroid e iphone) e o que ele pretende com esse curso.
 
-Aula 03
- - API é uma técnica usada para aprender qualquer cois a sozinho e de forma rapida. Adquirir o que você quer fazer em outras ferramentas. Praticar ver exemplos e os executar,tentativa e erro,modificar o exemplo. Interiorizar aplicar em exemplos práticos comemorar o feito e mostrar para as outras pessoas.
+Aula 03-Conteúdo pt1
+ - Falando sobre o basico do curso,e mostrando alguns widgets(que seria um componente visual) ensinando ele aumentar as imagens de tamanho,listas,colocar botões e etc.
 
-Aula 04
- - Entrar no Forum da Comudidade para falar com as pessoas para responder as suas perguntas,no Discord,Facebook e Telegram e também possuindo um canal no Youtube para ajudar a você ao menos ter uma base e mostre seus trabalhos para lhe elogiarem e te falar se tiver algo de errado ou dica.
+Aula 04-Conteúdo pt2
+ - Falar sobre o projeto que ele vai desenvolver para se acostumar com a linguagem e se desenvolver com listas,asbas,configurações de telas e etc,senhas,email aprendendo  ausar adjunto o provador de email,podendo se logar com o email e o email do google 
 
-Aula 05
- - Para aprender os "Widget's" precisa saber também o Dart em si,é muiot téorico mas é bom que pratique,para entra nas aulas de design com mais propriedade,depois volte para o curso flutter e seus princpais Widget's.
+Aula 05-App de Filmes
+ - Aprenderemos como fazer uma tela de login,tendo uma lista de filmes,detalhes sobre eles e ter como favoritar o filme com uma animação
+
+Aula 06-Dúvidas
+ - Apenas perguntando se teriamos alguma dúvida.
+
+Aula 07-Codigo Fonte
+ - Utilizando o Codigo Fonte
