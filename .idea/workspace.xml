@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58ff7a48-313c-4df4-8b0d-f21033835080" name="Changes" comment="adicionei os comandos">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +38,7 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "Aula01",
+    "git-widget-placeholder": "Aula08",
     "last_opened_file_path": "/home/miguel/Documentos/MeusProjetos/curso-flutter",
     "show.migrate.to.gradle.popup": "false"
   }
