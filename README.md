@@ -43,3 +43,6 @@ Aula 08-Configuração
 
 Aula 09-Android Studio
  - Aqui ele ensinou como baixar o "Android Studio",basicamente aqui teremos o Android SDK e os emuladores e assim fazendo os seus projetos.
+
+Aula 11-Flutter SDK
+ - Aprendendo como baixar e executar o Flutter SDK,assim podendo usar ele com liberdade no terminal,criando e utilizando pastas(explicando é uma ferramenta para desenvolver aplicativos em diferentes plataformas).
