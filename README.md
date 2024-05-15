@@ -27,13 +27,16 @@ Aula 03-Conteúdo pt1
  - Falando sobre o basico do curso,e mostrando alguns widgets(que seria um componente visual) ensinando ele aumentar as imagens de tamanho,listas,colocar botões e etc.
 
 Aula 04-Conteúdo pt2
- - Falar sobre o projeto que ele vai desenvolver para se acostumar com a linguagem e se desenvolver com listas,asbas,configurações de telas e etc,senhas,email aprendendo  ausar adjunto o provador de email,podendo se logar com o email e o email do google 
+ - Falar sobre o projeto que ele vai desenvolver para se acostumar com a linguagem e se desenvolver com listas,asbas,configurações de telas e etc,senhas,email aprendendo  ausar adjunto o provador de email,podendo se logar com o email e o email do google.
 
 Aula 05-App de Filmes
- - Aprenderemos como fazer uma tela de login,tendo uma lista de filmes,detalhes sobre eles e ter como favoritar o filme com uma animação
+ - Aprenderemos como fazer uma tela de login,tendo uma lista de filmes,detalhes sobre eles e ter como favoritar o filme com uma animação.
 
 Aula 06-Dúvidas
  - Apenas perguntando se teriamos alguma dúvida.
 
 Aula 07-Codigo Fonte
- - Utilizando o Codigo Fonte
+ - Utilizando o Codigo Fonte.
+
+Aula 08-Configuração
+ - Resumindo como configurar o Flutter no android studio,criando um emulador,fazendo a configuração depois você podera baixar o Flutter SDK da marca do seu aparelho eletrônico e criar um projeto com o Flutter em outra aula.
