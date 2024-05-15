@@ -40,3 +40,6 @@ Aula 07-Codigo Fonte
 
 Aula 08-Configuração
  - Resumindo como configurar o Flutter no android studio,criando um emulador,fazendo a configuração depois você podera baixar o Flutter SDK da marca do seu aparelho eletrônico e criar um projeto com o Flutter em outra aula.
+
+Aula 09-Android Studio
+ - Aqui ele ensinou como baixar o "Android Studio",basicamente aqui teremos o Android SDK e os emuladores e assim fazendo os seus projetos.
