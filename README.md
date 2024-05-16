@@ -13,6 +13,7 @@ Git Hub
  - Git Restore --Staged (Arquivo),Retira o que já está adicionado.
  - Git Merge (nome da Branch),joga tudo da branch selecionada para aquela que você está no momento
  - Git Branch -m (novo nome),para renomear a branch
+ - Git Branch -D (Nome da Branch),Exclui a Branch da maquina.
 
 aprendizado de curso flutter
 
