@@ -46,3 +46,7 @@ Aula 09-Android Studio
 
 Aula 11-Flutter SDK
  - Aprendendo como baixar e executar o Flutter SDK,assim podendo usar ele com liberdade no terminal,criando e utilizando pastas(explicando é uma ferramenta para desenvolver aplicativos em diferentes plataformas).
+
+
+Aula 12-Configurar a variável de ambiente PATH
+ - Podemos configurar no Linux,é bom você criar um arquivo ".bash_profile" para á estar lá quando ligar o Pc
