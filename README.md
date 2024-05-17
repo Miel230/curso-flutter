@@ -55,3 +55,9 @@ Aula 12-Configurar a variável de ambiente PATH
 
 Aula 14-Criar um projeto
  - Usaremos o Android Studio para criar o projeto do Flutter,quando for criar use normalmente o "Flutter Application" que é um aplicativo.
+
+Aula 15-Executando
+- Logo depois de criar o projeto no Android Studio,abrindo o simulador  ele vai baixar as depedências e instalar o aplicativo no simulador.
+
+Aula 16-Explicando as Pastas
+- Apenas explicando as pastas que são utilizadas nesse curso(que normalmente a gente não uso,só se for avançado)
