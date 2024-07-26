@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 
-class HelloPage2 extends StatelessWidget {
-  const HelloPage1({super.key});
-
+class HelloPage3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Page 2"),
+        title: Text("Page 3"),
       ),
     );
   }
