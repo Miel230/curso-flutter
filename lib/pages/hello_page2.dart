@@ -13,8 +13,10 @@ class HelloPage2 extends StatelessWidget {
 
   _body(context) {
     return Center(
-      child: RaisedButton(
-          color: Colors.blue,
+      child: ElevatedButton(
+          style: ButtonStyle(
+            backgroundColor: MaterialStateProperty.all(Colors.blue),
+          ),
           child: Text(
             "Voltar",
             style: TextStyle(color: Colors.white),

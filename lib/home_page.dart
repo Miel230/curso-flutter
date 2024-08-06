@@ -67,7 +67,6 @@ class HomePage extends StatelessWidget {
   }
 
   void _onClickNavigator(BuildContext context, Widget page) {
-    print("Clicou");
     Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) {
       return page;
     }));
