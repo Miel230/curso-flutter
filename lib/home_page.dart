@@ -2,6 +2,7 @@ import 'package:development/pages/hello_listview.dart';
 import 'package:development/pages/hello_page1.dart';
 import 'package:development/pages/hello_page2.dart';
 import 'package:development/pages/hello_page3.dart';
+import 'package:development/utils/nav.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -48,7 +49,7 @@ class HomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
             _button(context, "ListView",
-                () => _onClickNavigator(context, HelloListview())),
+                () => _onClickNavigator(context, HelloListView())),
             _button(context, "Page 2",
                 () => _onClickNavigator(context, HelloPage2())),
             _button(context, "Page 3",
@@ -67,11 +68,12 @@ class HomePage extends StatelessWidget {
     );
   }
 
+
+
   void _onClickNavigator(BuildContext context, Widget page) async {
-   String s = await Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) {
-      return page;
-    }));
-   
+
+    String s = await push(context, page);
+
    print(">> $s");
   }
 
