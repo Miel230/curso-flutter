@@ -60,4 +60,7 @@ Aula 15-Executando
 - Logo depois de criar o projeto no Android Studio,abrindo o simulador  ele vai baixar as depedências e instalar o aplicativo no simulador.
 
 Aula 16-Explicando as Pastas
-- Apenas explicando as pastas que são utilizadas nesse curso(que normalmente a gente não uso,só se for avançado)
+- Apenas explicando as pastas que são utilizadas nesse curso(que normalmente a gente não uso,só se for avançado).
+
+Aula 17-Dicas
+- Na pagina de instalação do flutter,que ele de algum forma traz um comparativo entre o flutter e outra plataforma,para aprender alguns conseidos do flutter.
