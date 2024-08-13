@@ -3,17 +3,18 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class DogPage extends StatelessWidget {
-  const DogPage({super.key, required this.dog});
+  const DogPage(this.dog, {super.key});
 
    final Dog dog;
 
-
-   @override
+  @override
    Widget build(BuildContext context) {
      return Scaffold(
        appBar: AppBar(
          title: Text(dog.nome),
-       )
+         backgroundColor: Colors.blue,
+       ),
+           body: Image.asset(dog.foto),
      );
    }
  }
