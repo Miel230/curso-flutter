@@ -86,6 +86,7 @@ class HomePage extends StatelessWidget {
       content: const Text('Ola Flutter'),
       duration: const Duration(seconds: 1),
       action: SnackBarAction(
+       textColor: Colors.yellow,
         label: 'OK',
         onPressed: () { 
           print("OK!");
