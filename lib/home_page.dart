@@ -21,7 +21,8 @@ class HomePage extends StatelessWidget {
       color: Colors.white,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[_text(), _pageView(), _buttons(context)],
+        children: <Widget>[_text(), _pageView(), _buttons(),
+        ],
       ),
     );
   }
@@ -42,31 +43,34 @@ class HomePage extends StatelessWidget {
     );
   }
 
-  _buttons(context) {
-    return Column(
-      children: <Widget>[
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: <Widget>[
-            _button(context, "ListView",
-                () => _onClickNavigator(context, HelloListView())),
-            _button(context, "Page 2",
-                () => _onClickNavigator(context, HelloPage2())),
-            _button(context, "Page 3",
-                () => _onClickNavigator(context, HelloPage3())),
-          ],
-        ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: <Widget>[
-            _button(context, "Snack", _onClickSnack),
-            _button(context, "Dialog", _onClickDialog),
-            _button(context, "Toast", _onClickToast)
-          ],
-        )
-      ],
-    );
-  }
+  _buttons() {
+   return Builder(builder: (context)
+   {
+     return Column(
+       children: <Widget>[
+         Row(
+           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+           children: <Widget>[
+             _button(context, "ListView",
+                     () => _onClickNavigator(context, HelloListView())),
+             _button(context, "Page 2",
+                     () => _onClickNavigator(context, HelloPage2())),
+             _button(context, "Page 3",
+                     () => _onClickNavigator(context, HelloPage3())),
+           ],
+         ),
+         Row(
+           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+           children: <Widget>[
+             _button(context, "Snack", () => _onClickSnack(context)),
+             _button(context, "Dialog", _onClickDialog),
+             _button(context, "Toast", _onClickToast)
+           ],
+         )
+       ],
+     );
+   });
+   }
 
 
 
@@ -77,7 +81,19 @@ class HomePage extends StatelessWidget {
    print(">> $s");
   }
 
-  _onClickSnack() {}
+  _onClickSnack(context) {
+    ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+      content: const Text('Ola Flutter'),
+      duration: const Duration(seconds: 1),
+      action: SnackBarAction(
+       textColor: Colors.yellow,
+        label: 'OK',
+        onPressed: () { 
+          print("OK!");
+        },
+      ),
+    ));
+  }
 
   _onClickDialog() {}
 
