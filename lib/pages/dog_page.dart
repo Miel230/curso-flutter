@@ -7,8 +7,6 @@ class DogPage extends StatelessWidget {
 
    final Dog dog;
 
-  DogPage(this.dog);
-
   @override
    Widget build(BuildContext context) {
      return Scaffold(
