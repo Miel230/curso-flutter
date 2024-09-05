@@ -63,7 +63,7 @@ class HomePage extends StatelessWidget {
            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
            children: <Widget>[
              _button(context, "Snack", () => _onClickSnack(context)),
-             _button(context, "Dialog", _onClickDialog),
+             _button(context, "Dialog", () => _onClickDialog(context)),
              _button(context, "Toast", _onClickToast)
            ],
          )
@@ -88,14 +88,35 @@ class HomePage extends StatelessWidget {
       action: SnackBarAction(
        textColor: Colors.yellow,
         label: 'OK',
-        onPressed: () { 
+        onPressed: () {
           print("OK!");
         },
       ),
     ));
   }
 
-  _onClickDialog() {}
+  _onClickDialog(BuildContext context) {
+   showDialog(context: context,
+       barrierDismissible: false,
+       builder: (context) {
+     return WillPopScope(
+       onWillPop: () async => false,
+       child: AlertDialog(
+         title: Text("Flutter é muito legal"),
+         actions: <Widget>[
+           TextButton(onPressed: () {
+         Navigator.pop(context);
+       } , child: Text("Cancelar")
+           ),
+           TextButton(onPressed:  () {
+             Navigator.pop(context);
+           } , child: Text("OK")
+           ),
+         ],
+       ),
+     );
+   });
+  }
 
   _onClickToast() {}
 
@@ -137,3 +158,5 @@ class HomePage extends StatelessWidget {
     );
   }
 }
+
+
