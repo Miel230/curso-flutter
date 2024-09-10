@@ -4,6 +4,7 @@ import 'package:development/pages/hello_page2.dart';
 import 'package:development/pages/hello_page3.dart';
 import 'package:development/utils/nav.dart';
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -13,14 +14,41 @@ class HomePage extends StatelessWidget {
         title: Text("Hello Flutter"),
       ),
       body: _body(context),
+      floatingActionButton: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: <Widget>[
+          FloatingActionButton(
+            child: Icon(Icons.add),
+            onPressed: () {
+              _onClickFab();
+            },
+          ),
+          SizedBox(
+            width: 8,
+            height: 8,
+          ),
+          FloatingActionButton(
+            child: Icon(Icons.favorite),
+            onPressed: () {
+              _onClickFab();
+            },
+          )
+        ],
+      ),
     );
+  }
+
+
+  _onClickFab() {
+    print("Adicionar");
   }
 
   _body(context) {
     return Container(
+      padding: EdgeInsets.only(top: 16),
       color: Colors.white,
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[_text(), _pageView(), _buttons(),
         ],
       ),
@@ -118,7 +146,17 @@ class HomePage extends StatelessWidget {
    });
   }
 
-  _onClickToast() {}
+  _onClickToast() {
+    Fluttertoast.showToast(
+        msg:"Flutter é muito legal",
+        toastLength: Toast.LENGTH_LONG,
+        gravity: ToastGravity.CENTER,
+        timeInSecForIosWeb: 5,
+        backgroundColor: Colors.green,
+        textColor: Colors.white,
+        fontSize: 16.0
+    );
+  }
 
   _button(BuildContext context, String text, Function onPressed) {
     return ElevatedButton(
