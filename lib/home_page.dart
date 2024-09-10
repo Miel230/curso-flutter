@@ -4,6 +4,7 @@ import 'package:development/pages/hello_page2.dart';
 import 'package:development/pages/hello_page3.dart';
 import 'package:development/utils/nav.dart';
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -13,14 +14,43 @@ class HomePage extends StatelessWidget {
         title: Text("Hello Flutter"),
       ),
       body: _body(context),
+      floatingActionButton: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: <Widget>[
+          FloatingActionButton(
+            child: Icon(Icons.add),
+            onPressed: () {
+              _onClickFab();
+            },
+          ),
+          SizedBox(
+            width: 8,
+            height: 8,
+          ),
+          FloatingActionButton(
+            child: Icon(Icons.favorite),
+            onPressed: () {
+              _onClickFab();
+            },
+          )
+        ],
+      ),
+        drawer: Drawer(
+        ),
     );
+  }
+
+
+  _onClickFab() {
+    print("Adicionar");
   }
 
   _body(context) {
     return Container(
+      padding: EdgeInsets.only(top: 16),
       color: Colors.white,
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[_text(), _pageView(), _buttons(),
         ],
       ),
@@ -63,7 +93,7 @@ class HomePage extends StatelessWidget {
            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
            children: <Widget>[
              _button(context, "Snack", () => _onClickSnack(context)),
-             _button(context, "Dialog", _onClickDialog),
+             _button(context, "Dialog", () => _onClickDialog(context)),
              _button(context, "Toast", _onClickToast)
            ],
          )
@@ -88,16 +118,47 @@ class HomePage extends StatelessWidget {
       action: SnackBarAction(
        textColor: Colors.yellow,
         label: 'OK',
-        onPressed: () { 
+        onPressed: () {
           print("OK!");
         },
       ),
     ));
   }
 
-  _onClickDialog() {}
+  _onClickDialog(BuildContext context) {
+   showDialog(context: context,
+       barrierDismissible: false,
+       builder: (context) {
+     return WillPopScope(
+       onWillPop: () async => false,
+       child: AlertDialog(
+         title: Text("Flutter é muito legal"),
+         actions: <Widget>[
+           TextButton(onPressed: () {
+         Navigator.pop(context);
+       } , child: Text("Cancelar")
+           ),
+           TextButton(onPressed:  () {
+             Navigator.pop(context);
+           } , child: Text("OK")
+           ),
+         ],
+       ),
+     );
+   });
+  }
 
-  _onClickToast() {}
+  _onClickToast() {
+    Fluttertoast.showToast(
+        msg:"Flutter é muito legal",
+        toastLength: Toast.LENGTH_LONG,
+        gravity: ToastGravity.CENTER,
+        timeInSecForIosWeb: 5,
+        backgroundColor: Colors.green,
+        textColor: Colors.white,
+        fontSize: 16.0
+    );
+  }
 
   _button(BuildContext context, String text, Function onPressed) {
     return ElevatedButton(
@@ -137,3 +198,5 @@ class HomePage extends StatelessWidget {
     );
   }
 }
+
+
