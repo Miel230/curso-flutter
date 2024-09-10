@@ -12,6 +12,8 @@ Git Hub
  - Git Checkout -- .,Apagar tudo que eu fiz.
  - Git Restore --Staged (Arquivo),Retira o que já está adicionado.
  - Git Merge (nome da Branch),joga tudo da branch selecionada para aquela que você está no momento
+ - Git Branch -m (novo nome),para renomear a branch
+ - Git Branch -D (Nome da Branch),Exclui a Branch da maquina.
 
 aprendizado de curso flutter
 
@@ -49,10 +51,16 @@ Aula 11-Flutter SDK
 
 
 Aula 12-Configurar a variável de ambiente PATH
- - Podemos configurar no Linux,é bom você criar um arquivo ".bash_profile" para á estar lá quando ligar o Pc.
+ - Podemos configurar no Linux,é bom você criar um arquivo ".bash_profile" para á estar lá quando ligar o Pc
 
 Aula 14-Criar um projeto
  - Usaremos o Android Studio para criar o projeto do Flutter,quando for criar use normalmente o "Flutter Application" que é um aplicativo.
 
 Aula 15-Executando
- - Logo depois de criar o projeto no Android Studio,abrindo o simulador  ele vai baixar as depedências e instalar o aplicativo no simulador.
+- Logo depois de criar o projeto no Android Studio,abrindo o simulador  ele vai baixar as depedências e instalar o aplicativo no simulador.
+
+Aula 16-Explicando as Pastas
+- Apenas explicando as pastas que são utilizadas nesse curso(que normalmente a gente não uso,só se for avançado).
+
+Aula 17-Dicas
+- Na pagina de instalação do flutter,que ele de algum forma traz um comparativo entre o flutter e outra plataforma,para aprender alguns conseidos do flutter.
