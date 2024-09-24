@@ -10,34 +10,50 @@ import 'package:fluttertoast/fluttertoast.dart';
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Hello Flutter"),
-      ),
-      body: _body(context),
-      floatingActionButton: Column(
-        mainAxisAlignment: MainAxisAlignment.end,
-        children: <Widget>[
-          FloatingActionButton(
-            child: Icon(Icons.add),
-            onPressed: () {
-              _onClickFab();
-            },
-          ),
-          SizedBox(
-            width: 8,
-            height: 8,
-          ),
-          FloatingActionButton(
-            child: Icon(Icons.favorite),
-            onPressed: () {
-              _onClickFab();
-            },
-          )
-        ],
-      ),
-        drawer: DrawerList(
+    return DefaultTabController(
+      length: 3,
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text("Hello Flutter"),
+          bottom: TabBar(tabs: [
+            Tab(text: "Tab 1",),
+            Tab(text: "Tab 2",),
+            Tab(text: "Tab 3",),
+          ]),
         ),
+        body: TabBarView(children: [
+          _body(context),
+          Container(
+            color: Colors.green,
+          ),
+          Container(
+            color: Colors.yellow,
+          )
+        ]),
+        floatingActionButton: Column(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: <Widget>[
+            FloatingActionButton(
+              child: Icon(Icons.add),
+              onPressed: () {
+                _onClickFab();
+              },
+            ),
+            SizedBox(
+              width: 8,
+              height: 8,
+            ),
+            FloatingActionButton(
+              child: Icon(Icons.favorite),
+              onPressed: () {
+                _onClickFab();
+              },
+            )
+          ],
+        ),
+          drawer: DrawerList(
+          ),
+      ),
     );
   }
 
