@@ -1,3 +1,4 @@
+import 'package:development/drawer_list.dart';
 import 'package:development/pages/hello_listview.dart';
 import 'package:development/pages/hello_page1.dart';
 import 'package:development/pages/hello_page2.dart';
@@ -35,7 +36,7 @@ class HomePage extends StatelessWidget {
           )
         ],
       ),
-        drawer: Drawer(
+        drawer: DrawerList(
         ),
     );
   }
